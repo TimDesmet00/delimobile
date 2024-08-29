@@ -57,3 +57,5 @@ const del = async (req, res) => {
     });
   }
 };
+
+module.exports = { getAll, getOne, add, edit, del };
