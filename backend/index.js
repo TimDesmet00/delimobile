@@ -11,6 +11,8 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// ajout des routes pour les fonction CRUD
+
 app.use("/comm", require("./router/comm.router"));
 
 app.listen(port, () => {
