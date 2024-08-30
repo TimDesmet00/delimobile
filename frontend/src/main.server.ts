@@ -1,7 +1,9 @@
 import { bootstrapApplication } from '@angular/platform-browser';
-import { AppComponent } from './app/app.component';
 import { config } from './app/app.config.server';
 
-const bootstrap = () => bootstrapApplication(AppComponent, config);
+// Importez votre composant AccueilComponent
+import { AcceuilComponent } from './app/acceuil/acceuil.component';
+
+const bootstrap = () => bootstrapApplication(AcceuilComponent, config);
 
 export default bootstrap;
