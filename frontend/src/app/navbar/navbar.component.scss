@@ -1,0 +1,12 @@
+nav {
+    .navbar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        li{
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+}
