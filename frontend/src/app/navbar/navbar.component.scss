@@ -1,4 +1,6 @@
 nav {
+    border: #c00000 5px solid;
+    margin: 0.5em;
     .navbar {
         display: flex;
         justify-content: center;
@@ -9,10 +11,10 @@ nav {
             margin: 1em;
             a{
                 // text-decoration: none;
-                color: darkblue;
+                color: #ffffff;
             }
             a:hover{
-                color: pink;
+                color: #c00000;
             }
         }
     }
