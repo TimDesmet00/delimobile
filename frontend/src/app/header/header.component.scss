@@ -1,12 +1,31 @@
-h1 {
-    font-size: 5em;
-    text-align: center;
-    margin-top: 0.5em;
-    font-weight: 700;
-}
-H2 {
-    font-size: 2em;
-    text-align: center;
-    margin-top: 1em;
+.header{
+    position: relative;
+  display: inline-block;
+    img{
+        display: block;
+        width: 100%;
+    }
+    .title {
+        position: absolute; // Positionner le texte par rapport à .header
+        top: 50%; // Centre verticalement
+        left: 50%; // Centre horizontalement
+        transform: translate(-50%, -50%); // Ajuste la position pour centrer parfaitement
+        color: white; // Couleur du texte pour contraste avec l'image
+        background-color: rgba(0, 0, 0, 0.5); // Fond semi-transparent pour lisibilité
+        padding: 20px; // Espacement autour du texte
+        text-align: center; // Centre le texte
+        width: 80%; // Ajuste la largeur du conteneur du texte si nécessaire
+        box-sizing: border-box; // Inclut padding et bordure dans la largeur totale
     
+        h1 {
+          font-size: 5em;
+          margin: 0.5em 0; // Ajuste les marges si nécessaire
+          font-weight: 700;
+        }
+    
+        h2 {
+          font-size: 2em;
+          margin-top: 1em; // Espace au-dessus de h2
+        }
+      }    
 }
