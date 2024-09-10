@@ -1,10 +1,26 @@
 import { bootstrapApplication } from '@angular/platform-browser';
-import { appConfig } from './app/app.config';
-// Supprimez cette ligne
-// import { AppComponent } from './app/app.component';
-
-// Si vous avez un autre composant principal, importez-le ici
+import { provideRouter } from '@angular/router';
 import { AcceuilComponent } from './app/acceuil/acceuil.component';
+import { AboutComponent } from './app/about/about.component';
+import { GalleryComponent } from './app/gallery/gallery.component';
+import { ContactComponent } from './app/contact/contact.component';
 
-bootstrapApplication(AcceuilComponent, appConfig)
-  .catch((err) => console.error(err));
+console.log('AcceuilComponent:', AcceuilComponent);
+console.log('AboutComponent:', AboutComponent);
+console.log('GalleryComponent:', GalleryComponent);
+console.log('ContactComponent:', ContactComponent);
+
+const routes = [
+  { path: 'home', component: AcceuilComponent },
+  { path: 'about', component: AboutComponent },
+  { path: 'gallery', component: GalleryComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '**', redirectTo: '/home' }
+];
+
+bootstrapApplication(AcceuilComponent, {
+  providers: [
+    provideRouter(routes)
+  ]
+}).catch(err => console.error(err));
