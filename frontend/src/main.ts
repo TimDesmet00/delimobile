@@ -5,10 +5,10 @@ import { AboutComponent } from './app/about/about.component';
 import { GalleryComponent } from './app/gallery/gallery.component';
 import { ContactComponent } from './app/contact/contact.component';
 
-console.log('AcceuilComponent:', AcceuilComponent);
-console.log('AboutComponent:', AboutComponent);
-console.log('GalleryComponent:', GalleryComponent);
-console.log('ContactComponent:', ContactComponent);
+// console.log('AcceuilComponent:', AcceuilComponent);
+// console.log('AboutComponent:', AboutComponent);
+// console.log('GalleryComponent:', GalleryComponent);
+// console.log('ContactComponent:', ContactComponent);
 
 const routes: Routes = [
   { path: 'home', component: AcceuilComponent } as Route,
